@@ -3,4 +3,13 @@ title: Open Hots Data
 layout: global
 ---
 
-<h1>Open Hots Data</h1>
+<section class="section">
+  <h1>Open Hots Data</h1>
+{% for hero in site.data.heroes %}
+  <p><img src="/images/heroes/{{ hero.image }}"> {{ hero.name }}</p>
+{% endfor %}
+</section>
+
+<footer>
+  <img src="/images/backgrounds/footer_nexus_floor.jpg">
+</footer>

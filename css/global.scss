@@ -1,0 +1,33 @@
+---
+---
+
+@import '../_sass/_reset.scss';
+
+$text-color: #8eb1bc;
+
+body{
+  background: #08000f;
+  color: $text-color;
+  font-family: Metronic,"Myriad Pro",Myriad,Arial,sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 16px #009cff;
+}
+h1{
+  font-size: 42px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section{
+  padding-top: 4em;
+  background: url(/images/backgrounds/divider.png) no-repeat center top;
+}
+footer {
+}
