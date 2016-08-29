@@ -3,125 +3,228 @@
 <head>
   <title>Open Hots Data</title>
   <link rel="stylesheet" type="text/css" href="/css/global.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-  <section class="section">
+  <div class="background-default"></div>
+<section class="hero">
   <h1>Open Hots Data</h1>
-
-  <p><img src="/images/heroes/chromie.png"> Chromie</p>
-
-  <p><img src="/images/heroes/falstad.png"> Falstad</p>
-
-  <p><img src="/images/heroes/gall.png"> Gall</p>
-
-  <p><img src="/images/heroes/greymane.png"> Greymane</p>
-
-  <p><img src="/images/heroes/guldan.png"> Gul'dan</p>
-
-  <p><img src="/images/heroes/illidan.png"> Illidan</p>
-
-  <p><img src="/images/heroes/jaina.png"> Jaina</p>
-
-  <p><img src="/images/heroes/kaelthas.png"> Kael'thas</p>
-
-  <p><img src="/images/heroes/kerrigan.png"> Kerrigan</p>
-
-  <p><img src="/images/heroes/li-ming.png"> Li-Ming</p>
-
-  <p><img src="/images/heroes/lunara.png"> Lunara</p>
-
-  <p><img src="/images/heroes/nova.png"> Nova</p>
-
-  <p><img src="/images/heroes/raynor.png"> Raynor</p>
-
-  <p><img src="/images/heroes/the-butcher.png"> The Butcher</p>
-
-  <p><img src="/images/heroes/thrall.png"> Thrall</p>
-
-  <p><img src="/images/heroes/tracer.png"> Tracer</p>
-
-  <p><img src="/images/heroes/tychus.png"> Tychus</p>
-
-  <p><img src="/images/heroes/valla.png"> Valla</p>
-
-  <p><img src="/images/heroes/zeratul.png"> Zeratul</p>
-
-  <p><img src="/images/heroes/anubarak.png"> Anub'arak</p>
-
-  <p><img src="/images/heroes/artanis.png"> Artanis</p>
-
-  <p><img src="/images/heroes/arthas.png"> Arthas</p>
-
-  <p><img src="/images/heroes/chen.png"> Chen</p>
-
-  <p><img src="/images/heroes/cho.png"> Cho</p>
-
-  <p><img src="/images/heroes/dehaka.png"> Dehaka</p>
-
-  <p><img src="/images/heroes/diablo.png"> Diablo</p>
-
-  <p><img src="/images/heroes/etc.png"> E.T.C.</p>
-
-  <p><img src="/images/heroes/johanna.png"> Johanna</p>
-
-  <p><img src="/images/heroes/leoric.png"> Leoric</p>
-
-  <p><img src="/images/heroes/muradin.png"> Muradin</p>
-
-  <p><img src="/images/heroes/rexxar.png"> Rexxar</p>
-
-  <p><img src="/images/heroes/sonya.png"> Sonya</p>
-
-  <p><img src="/images/heroes/stitches.png"> Stitches</p>
-
-  <p><img src="/images/heroes/tyrael.png"> Tyrael</p>
-
-  <p><img src="/images/heroes/auriel.png"> Auriel</p>
-
-  <p><img src="/images/heroes/brightwing.png"> Brightwing</p>
-
-  <p><img src="/images/heroes/kharazim.png"> Kharazim</p>
-
-  <p><img src="/images/heroes/li-li.png"> Li Li</p>
-
-  <p><img src="/images/heroes/lt-morales.png"> Lt. Morales</p>
-
-  <p><img src="/images/heroes/malfurion.png"> Malfurion</p>
-
-  <p><img src="/images/heroes/rehgar.png"> Rehgar</p>
-
-  <p><img src="/images/heroes/tassadar.png"> Tassadar</p>
-
-  <p><img src="/images/heroes/tyrande.png"> Tyrande</p>
-
-  <p><img src="/images/heroes/uther.png"> Uther</p>
-
-  <p><img src="/images/heroes/abathur.png"> Abathur</p>
-
-  <p><img src="/images/heroes/azmodan.png"> Azmodan</p>
-
-  <p><img src="/images/heroes/gazlowe.png"> Gazlowe</p>
-
-  <p><img src="/images/heroes/medivh.png"> Medivh</p>
-
-  <p><img src="/images/heroes/murky.png"> Murky</p>
-
-  <p><img src="/images/heroes/nazeebo.png"> Nazeebo</p>
-
-  <p><img src="/images/heroes/sgt-hammer.png"> Sgt. Hammer</p>
-
-  <p><img src="/images/heroes/sylvanas.png"> Sylvanas</p>
-
-  <p><img src="/images/heroes/the-lost-vikings.png"> The Lost Vikings</p>
-
-  <p><img src="/images/heroes/xul.png"> Xul</p>
-
-  <p><img src="/images/heroes/zagara.png"> Zagara</p>
-
+  <p>We are a group of coders and games making an open community driven repository for sharing HOTS replays. If you want to take part of the experiment please contribute uploading your replays <a href='/upload'>here</a>.</p>
+</section>
+<section class="section">
+  <table class="map-table">
+    <tr>
+      <th class="empty"></th>
+      <th class="map-name">Map Name</th>
+      <th>Games Played</th>
+      <th>A<span class="desktop">verage</span><span class="mobile">vg.</span> Length</th>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/towers-of-doom.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Towers of Doom
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/infernal-shrines.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Infernal Shrines
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/battlefield-of-eternity.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Battlefield of Eternity
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/blackhearts-bay.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Blackhearts Bay
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/tomb-of-the-spider-queen.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Tomb of the Spider Queen
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/sky-temple.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Sky Temple
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/cursed-hollow.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Cursed Hollow
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/garden-of-terror.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Garden of Terror
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/dragon-shire.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Dragon Shire
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/braxis_holdout.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Braxis Holdout
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/warhead_junction.jpg">
+        </div>
+      </td>
+      <td class="map-name">
+        Warhead Junction
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    
+  </table>
 </section>
 
 <footer>
-  <img src="/images/backgrounds/footer_nexus_floor.jpg">
+  <p>Visit our <a href="https://github.com/OpenHotsData">GitHub</a> repo, or join the chat on <a href="https://gitter.im/openhotsdata/Lobby">Gitter</a>.</p>
 </footer>
+
+<script>
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+$('.r-number').each(function() {
+  $(this).text(getRandomArbitrary(9090, 9177));
+});
+$('.r-time').each(function() {
+  $(this).text('00:' + getRandomArbitrary(15, 30).toString() + ':' + getRandomArbitrary(10, 60).toString());
+});
+</script>
 </body>
 </html>

@@ -2,14 +2,53 @@
 title: Open Hots Data
 layout: global
 ---
-
-<section class="section">
+<div class="background-default"></div>
+<section class="hero">
   <h1>Open Hots Data</h1>
-{% for hero in site.data.heroes %}
-  <p><img src="/images/heroes/{{ hero.image }}"> {{ hero.name }}</p>
-{% endfor %}
+  <p>We are a group of coders and games making an open community driven repository for sharing HOTS replays. If you want to take part of the experiment please contribute uploading your replays <a href='/upload'>here</a>.</p>
+</section>
+<section class="section">
+  <table class="map-table">
+    <tr>
+      <th class="empty"></th>
+      <th class="map-name">Map Name</th>
+      <th>Games Played</th>
+      <th>A<span class="desktop">verage</span><span class="mobile">vg.</span> Length</th>
+    </tr>
+    {% for map in site.data.maps %}
+    <tr>
+      <td>
+        <div class="image-container">
+          <img src="/images/maps/{{ map.image }}">
+        </div>
+      </td>
+      <td class="map-name">
+        {{ map.name }}
+      </td>
+      <td>
+        <span class="r-number"></span>
+      </td>
+      <td>
+        <span class="r-time"></span>
+      </td>
+    </div>
+    {% endfor %}
+  </table>
 </section>
 
 <footer>
-  <img src="/images/backgrounds/footer_nexus_floor.jpg">
+  <p>Visit our <a href="https://github.com/OpenHotsData">GitHub</a> repo, or join the chat on <a href="https://gitter.im/openhotsdata/Lobby">Gitter</a>.</p>
 </footer>
+
+<script>
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+$('.r-number').each(function() {
+  $(this).text(getRandomArbitrary(9090, 9177));
+});
+$('.r-time').each(function() {
+  $(this).text('00:' + getRandomArbitrary(15, 30).toString() + ':' + getRandomArbitrary(10, 60).toString());
+});
+</script>
